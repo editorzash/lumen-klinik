@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumen Klinik – Perawatan yang Menenangkan</title>
+<style>
+:root{--bg:#f4f9fb;--w:#fff;--t:#14313f;--m:#5f7c8a;--a:#1fa8b5;--a2:#e6f6f8;--r:#ff8a7a;--s:#eaf0ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--t);font-family:"Segoe UI",system-ui,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1180px;margin:auto;padding:22px 24px}
+.lg{display:flex;align-items:center;gap:10px;font-weight:700;font-size:21px}
+.lg i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--a),#6fd6df);display:grid;place-items:center;color:#fff;font-style:normal}
+nav ul{display:flex;gap:30px;list-style:none;color:var(--m);font-size:15px}
+.bt{padding:12px 24px;background:var(--a);color:#fff;border-radius:50px;font-weight:600;font-size:15px;box-shadow:0 10px 24px rgba(31,168,181,.3)}
+.hero{max-width:1180px;margin:auto;padding:40px 24px 80px;display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.hero .ch{display:inline-block;background:var(--a2);color:var(--a);padding:7px 16px;border-radius:50px;font-size:13px;font-weight:600}
+.hero h1{font-size:clamp(36px,5.5vw,64px);line-height:1.08;margin:18px 0;font-weight:700;letter-spacing:-1.5px}
+.hero h1 span{color:var(--a)}
+.hero p{color:var(--m);font-size:18px;max-width:480px}
+.row{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;align-items:center}
+.ol{padding:12px 24px;border-radius:50px;border:2px solid #cfe3e8;font-weight:600}
+.vis{position:relative;height:440px}
+.blob{position:absolute;inset:0;background:linear-gradient(145deg,#bfeaf0,#d9e4ff);border-radius:62% 38% 55% 45%/50% 55% 45% 50%}
+.vis .em{position:absolute;inset:0;display:grid;place-items:center;font-size:170px}
+.fc{position:absolute;background:var(--w);border-radius:16px;padding:14px 18px;box-shadow:0 16px 40px rgba(20,49,63,.12);font-size:14px;display:flex;gap:12px;align-items:center}
+.fc b{display:block;font-size:17px}
+.fc.a{left:-20px;bottom:50px}.fc.b{right:-10px;top:40px}
+.fc i{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-style:normal;font-size:18px}
+.sv{max-width:1180px;margin:auto;padding:70px 24px}
+h2{font-size:clamp(28px,4vw,42px);letter-spacing:-1px;margin-bottom:10px}
+.sub{color:var(--m);margin-bottom:36px}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sc{background:var(--w);border-radius:24px;padding:28px 24px;transition:.25s;box-shadow:0 4px 18px rgba(20,49,63,.05)}
+.sc:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(31,168,181,.18)}
+.sc i{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;font-size:28px;font-style:normal;margin-bottom:16px}
+.sc:nth-child(1) i{background:var(--a2)}.sc:nth-child(2) i{background:#ffe9e5}.sc:nth-child(3) i{background:var(--s)}.sc:nth-child(4) i{background:#e9f7e6}
+.sc h3{font-size:19px;margin-bottom:6px}.sc p{color:var(--m);font-size:14px}
+.band{background:var(--t);color:#fff;border-radius:32px;max-width:1180px;margin:30px auto;padding:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
+.band b{font-size:46px;color:#6fd6df;display:block}
+.dr{max-width:1180px;margin:auto;padding:70px 24px}
+.dg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.d{background:var(--w);border-radius:24px;overflow:hidden;box-shadow:0 4px 18px rgba(20,49,63,.05)}
+.ph{height:170px;display:grid;place-items:center;font-size:80px}
+.d:nth-child(1) .ph{background:linear-gradient(135deg,#bfeaf0,#9ad3dd)}.d:nth-child(2) .ph{background:linear-gradient(135deg,#ffd9d2,#ffb3a7)}.d:nth-child(3) .ph{background:linear-gradient(135deg,#d9e4ff,#b3c7ff)}
+.d div.i{padding:20px 22px}.d small{color:var(--a);font-weight:600}.d h3{margin:2px 0}
+.bk{max-width:1180px;margin:30px auto 80px;padding:0 24px}
+.bk div{background:linear-gradient(120deg,var(--a),#5fc9d3);color:#fff;border-radius:32px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.bk h2{margin:0}.bk .w{background:#fff;color:var(--a);padding:15px 32px;border-radius:50px;font-weight:700}
+footer{text-align:center;color:var(--m);font-size:13px;padding:30px}
+@media(max-width:860px){.hero,.sg,.dg,.band{grid-template-columns:1fr}nav ul{display:none}.vis{height:340px}.fc.a{left:0}.fc.b{right:0}}
+</style></head><body>
+<nav><a class="lg" href="#"><i>✚</i>Lumen Klinik</a><ul><li>Layanan</li><li>Dokter</li><li>Jadwal</li><li>Kontak</li></ul><a class="bt" href="#janji">Buat janji</a></nav>
+<div class="hero"><div><span class="ch">● Buka 7 hari · 08.00 – 21.00</span><h1>Perawatan yang <span>menenangkan,</span> dekat dengan keluarga.</h1><p>Dokter ramah, antrean singkat, dan penjelasan yang mudah dimengerti. Kesehatan Anda kami jaga dengan hangat.</p><div class="row"><a class="bt" href="#janji">Buat janji online</a><a class="ol" href="#layanan">Lihat layanan</a></div></div>
+<div class="vis"><div class="blob"></div><div class="em">🩺</div><div class="fc a"><i style="background:#e9f7e6">✓</i><div><b>Tanpa antre</b>Pilih jam sendiri</div></div><div class="fc b"><i style="background:#ffe9e5">❤</i><div><b>4,9 / 5</b>2.300 ulasan</div></div></div></div>
+<div class="sv" id="layanan"><h2>Layanan kami</h2><p class="sub">Dari pemeriksaan rutin hingga konsultasi spesialis.</p>
+<div class="sg"><div class="sc"><i>🦷</i><h3>Gigi & Mulut</h3><p>Pembersihan, tambal, kawat gigi.</p></div><div class="sc"><i>👶</i><h3>Anak & Imunisasi</h3><p>Tumbuh kembang dan vaksin lengkap.</p></div><div class="sc"><i>🧬</i><h3>Cek Laboratorium</h3><p>Hasil cepat, bisa dilihat online.</p></div><div class="sc"><i>🧘</i><h3>Konsultasi Umum</h3><p>Keluhan harian dan rujukan.</p></div></div></div>
+<div class="band"><div><b>15 th</b>Melayani warga</div><div><b>40+</b>Tenaga medis</div><div><b>98%</b>Pasien puas</div></div>
+<div class="dr"><h2>Dokter kami</h2><p class="sub">Berpengalaman, sabar, dan mau mendengarkan.</p>
+<div class="dg"><div class="d"><div class="ph">👩‍⚕️</div><div class="i"><small>Dokter Umum</small><h3>dr. Maya Lestari</h3><p style="color:var(--m);font-size:14px">12 tahun pengalaman</p></div></div><div class="d"><div class="ph">👨‍⚕️</div><div class="i"><small>Spesialis Anak</small><h3>dr. Raka Pratama, Sp.A</h3><p style="color:var(--m);font-size:14px">Tumbuh kembang & imunisasi</p></div></div><div class="d"><div class="ph">🧑‍⚕️</div><div class="i"><small>Dokter Gigi</small><h3>drg. Nisa Ayuningtyas</h3><p style="color:var(--m);font-size:14px">Estetika & perawatan anak</p></div></div></div></div>
+<div class="bk" id="janji"><div><h2>Siap konsultasi hari ini?</h2><a class="w" href="#">Buat janji sekarang</a></div></div>
+<footer>© Lumen Klinik · Halaman demo</footer>
+</body></html>
